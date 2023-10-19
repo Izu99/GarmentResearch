@@ -1,0 +1,125 @@
+.homePage {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.homePage .welcome {
+    background-color: #5E6BE1;
+    display: flex;
+}
+
+.homePage .welcome h2 {
+    font-size: 3.5rem;
+    padding: 2rem 5rem;
+    color: #ffffff;
+    text-shadow: 0px 0px 15px #000000;
+}
+
+.homePage .welcome .welcome-image:nth-child(1) {
+    margin-left: 48%;
+}
+
+.homePage .welcome .welcome-image {
+    background-color: #D9D9D9;
+    width: 5.4rem;
+    margin: 2rem 5rem;
+    border: 2px solid #c7c7c7;
+    height: 5.4rem;
+    border-radius: 50%;
+}
+
+.homePage .welcome .welcome-image img{
+    padding-left: 20px;
+}
+
+.homePage .details {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 2rem;
+}
+
+.homePage .details .card {
+    background-color: #5E6BE1;
+    margin: 1rem;
+}
+
+.homePage .details .card .image {
+
+}
+
+.homePage .details .card .image img {
+    margin-top: 0.2rem;
+    /* width: 10rem; */
+    /* height: 6rem; */
+}
+
+.homePage .details .card h2  {
+    margin: 5rem 0;
+    font-size: 2rem;
+    color: #ffffff;
+    padding: 0 0.8rem;
+}
+
+.homePage .Footer {
+    margin-top: 5rem;
+    width: 100%;
+}
+
+.homePage .Footer .top {
+    background-color: #5E6BE1;
+    display: flex;
+}
+
+.homePage .Footer .top h2 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4rem;
+}
+
+.homePage .Footer .top .social-links {
+    margin-left: 30rem;
+    display: flex;
+    padding: 0.4rem;
+}
+
+.homePage .Footer .top .social-links i{
+    margin: 0.1rem 1rem;
+    background-color: #D9D9D9;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.homePage .Footer .bottom {
+    display: flex;
+}
+
+.homePage .Footer .bottom .logo {
+    margin-left: 1rem;
+}
+
+.homePage .Footer .bottom .logo h3 {
+    font-size: 1.1rem;
+}
+
+.homePage .Footer .bottom .map {
+    margin: 1rem;
+}
+
+.homePage .Footer .bottom .address {
+    padding-top: 2rem;
+}
+
+
+

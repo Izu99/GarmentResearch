@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto&display=swap");
+
+.proficiency {
+	width: 100%;
+	height: 100%;
+	min-height: 100vh;
+	background-color: #e2d2f2;
+}
+
+.proficiency .proficiency-percentage {
+    position: absolute;
+    left: 60%;
+    bottom: 50%;
+    font-size: 3rem;
+    background-color: #BD81818a;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.proficiency button {
+	background-color: #e2d2f2;
+}
+
+.proficiency i {
+	margin: 1rem;
+	font-size: 1.5rem;
+	text-align: left;
+}
+
+.proficiency h2 {
+	text-align: center;
+	font-size: 2.5rem;
+	font-family: "Inter", sans-serif;
+}
+
+.proficiency .top-labels {
+	position: absolute;
+	top: 40%;
+	left: 30%;
+	transform: translate(-50%, -50%);
+	font-size: 1.4rem;
+}
+
+.proficiency .top-labels label {
+	display: block;
+	margin-top: -0.5rem;
+}
+
+.proficiency .top-labels label span {
+	margin-left: 10px;
+	font-weight: 500;
+}
+
+.proficiency .bottom-labels {
+	position: absolute;
+	top: 65%;
+	left: 32%;
+	transform: translate(-58%, -50%);
+	font-size: 1.6rem;
+}
+
+.proficiency .bottom-labels label {
+	display: block;
+	margin-top: -1rem;
+	font-weight: 550;
+}
+
+.proficiency .bottom-labels label span.percentage {
+	position: absolute;
+	left: 20rem;
+}

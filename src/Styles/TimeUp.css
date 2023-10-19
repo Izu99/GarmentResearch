@@ -1,0 +1,30 @@
+.timeUp {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.timeUp h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.timeUp .image {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.timeUp .image img {
+    width: 20%;
+}
+
+.timeUp h3 {
+    text-align: center;
+    justify-content: center;
+    font-size: 1.9rem;
+    color: #ff0000;
+}
+
+.timeUp h3 i {
+    color: #000000;
+}

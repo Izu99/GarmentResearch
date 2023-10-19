@@ -1,0 +1,17 @@
+
+.register form a {
+    text-decoration: none;
+    color: #551A8B;
+}
+
+.register form h3 .to-signin {
+    color: #6e6b6b;
+}
+
+.register form h3 .to-signin span {
+    color: #551A8B;
+}
+
+.MuiGrid-item {
+    margin-top: 75px !important;
+}
