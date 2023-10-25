@@ -274,7 +274,7 @@ export const ImageUploaddefect = () => {
     confidence = (parseFloat(data.confidence) * 100).toFixed(2);
   }
 
-  return (
+  return (   
     <React.Fragment>
       <Container maxWidth={false} className={classes.mainContainerImage} disableGutters>
         <Grid

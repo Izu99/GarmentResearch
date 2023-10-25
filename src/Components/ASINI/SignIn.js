@@ -20,7 +20,7 @@ export default class SignIn extends Component {
 
 
           <h3><a href="">Forget Password?</a></h3>
-          <h3><a href="">Don't Have an Account? <span>Sign Up</span></a></h3>
+          <h3 ><a href="" className="to-signup">Don't Have an Account? <span>Sign Up</span></a></h3>
         </form>
        
       

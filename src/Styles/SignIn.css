@@ -54,8 +54,13 @@
     color: #551A8B;
 }
 
+.signin h3 {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
 .signin h3 .to-signup {
-    color: #6e6b6b;
+    color: #5f5d5d;
 }
 
 .signin h3 .to-signup span {

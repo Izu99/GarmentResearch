@@ -34,12 +34,13 @@ class App extends Component {
 						<Route path='/ImageUploaddefect/:id' element={<ImageUploaddefect />} />
 							<Route path='/traineereport' element={<TraineeReport />} />
 							<Route path='/deluxReport' element={<DeluxReport />} />
-						<Route exact path='/' element={<HomePage />} />
+						<Route exact path='' element={<HomePage />} />
 					</Routes>
 				</Router>
 			</div>
 		);
 	}
 }
+
 
 export default App;
