@@ -15,6 +15,7 @@ import { ImageUploaddefect } from "./Components/ASINI/defect";
 import TraineeReport from "./Components/IRONI/TraineeReport";
 import DeluxReport from "./Components/ASINI/deluxReport";
 import HomePage from "./Components/ASINI/HomePage";
+import ImageUploadForm from "./Components/IRONI/ImageUploadForm";
 
 class App extends Component {
 	render() {
@@ -35,6 +36,7 @@ class App extends Component {
 						<Route path='/traineereport' element={<TraineeReport />} />
 						<Route path='/deluxReport' element={<DeluxReport />} />
 						<Route exact path='' element={<HomePage />} />
+						<Route path="/imgUpload" element={<ImageUploadForm />} />
 					</Routes>
 				</Router>
 			</div>
