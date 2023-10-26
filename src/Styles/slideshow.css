@@ -1,11 +1,10 @@
-
 .slider .card {
 	color: none;
 	background: linear-gradient(
 		90deg,
 		rgba(32, 1, 26, 0.2) 0%,
-		rgba(155, 27, 178, 0.20) 50%,
-		rgba(83, 8, 164, 0.20) 90%
+		rgba(155, 27, 178, 0.2) 50%,
+		rgba(83, 8, 164, 0.2) 90%
 	);
 	/* --bs-card-border-color: #2D2D30!important; */
 	margin-left: 25px;
@@ -13,7 +12,6 @@
 	margin-top: 1rem;
 	width: 35% !important;
 }
-
 
 .slider .card-img-top {
 	/* height: 100%; */
@@ -28,14 +26,43 @@
 }
 
 .slider img {
-    width: 380px;
-    height: 255px;
+	width: 380px;
+	height: 255px;
 }
 
-@media only screen and (max-width: 991px) { 
+@media only screen and (max-width: 991px) {
 	.slider img {
-		width: 340px;
-		height: 220px;
+		width: 320px;
+		height: 200px;
 	}
-
 }
+
+@media only screen and (max-width: 900px) {
+	.slider img {
+		width: 280px;
+		height: 180px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.slider img {
+		width: 260px;
+		height: 180px;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.slider img {
+		width: 220px;
+		height: 150px;
+	}
+}
+
+@media only screen and (max-width: 620px) {
+	.slider img {
+		width: 350px;
+	}
+}
+
+	
+

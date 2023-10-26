@@ -10,7 +10,7 @@ import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import { Paper, CardActionArea, CardMedia, Grid, TableContainer, Table, TableBody, TableHead, TableRow, TableCell, Button, CircularProgress } from "@material-ui/core";
 import cblogo from "../../images/cblogo.PNG"
-import image from "../../images/home.jpg";
+// import image from "../../images/home.jpg";
 import { DropzoneArea } from 'material-ui-dropzone';
 import { common } from '@material-ui/core/colors';
 import Clear from '@material-ui/icons/Clear';
@@ -72,7 +72,7 @@ const useStyles = makeStyles((theme) => ({
     left: 0,
     right: 0,
     bottom: 0,
-    backgroundImage: `url(${image})`,
+    // backgroundImage: `url(${image})`,
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     backgroundSize: 'cover',
@@ -276,6 +276,51 @@ export const ImageUploaddefect = () => {
 
   return (   
     <React.Fragment>
+      <nav class='navbar navbar-expand-lg'>
+					<a class='navbar-brand d-flex justify-content-between ms-5' href='#'>
+						<img src={logo} alt='' />
+					</a>
+					<button
+						class='navbar-toggler'
+						type='button'
+						data-bs-toggle='collapse'
+						data-bs-target='#navbarSupportedContent'
+						aria-controls='navbarSupportedContent'
+						aria-expanded='false'
+						aria-label='Toggle navigation'>
+						<span class='navbar-toggler-icon'></span>
+					</button>
+
+					<div class='collapse navbar-collapse justify-content-center' id='navbarSupportedContent'>
+						<ul class='navbar-nav mr-auto'>
+							<li class='nav-item active'>
+								<a class='nav-link ms-5' href='#'>
+									Home
+								</a>
+							</li>
+							<li class='nav-item active'>
+								<a class='nav-link ms-5' href='#'>
+									Progress View
+								</a>
+							</li>
+							<li class='nav-item active'>
+								<a class='nav-link ms-5' href='#'>
+									Progress Report
+								</a>
+							</li>
+							<li class='nav-item active'>
+								<a class='nav-link ms-5' href='#'>
+									Contact Us
+								</a>
+							</li>
+							<li class='nav-item active'>
+								<a class='nav-link ms-5' href='#'>
+									About
+								</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
       <Container maxWidth={false} className={classes.mainContainerImage} disableGutters>
         <Grid
           className={classes.gridContainer}

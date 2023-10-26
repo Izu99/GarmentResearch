@@ -4,7 +4,7 @@ import logo from "../../images/logo.png";
 import "../../Styles/Navbar.css";
 import axios from "axios";
 import jsPDF from "jspdf";
-import "jspdf-autotable"; 
+import "jspdf-autotable";
 import { Link, useParams, useNavigate } from "react-router-dom";
 
 function TraineeReport() {
@@ -24,7 +24,7 @@ function TraineeReport() {
   const deletePost = async (id) => {
     await axios.delete(`https://garmnetresearch.onrender.com/notes/${id}`);
     loadPosts();
-	alert("Employee Successfully Deleted....")
+    alert("Employee Successfully Deleted....")
   };
 
   const exportPDF = () => {
@@ -62,25 +62,52 @@ function TraineeReport() {
 
   return (
     <div className="traineeReport">
-      <header className="navbar">
-        <ul>
-          <img src={logo} alt="" />
-          <li>Home</li>
-          <li>Progress View</li>
-          <li>Progress Report</li>
-          <li>Contact Us</li>
-          <li>About</li>
-        </ul>
-      </header>
-      <h2>Defect Report</h2>
-      <Link
-  className="btn btn-outline-primary mx-2"
-  to={`/register`}
-  style={{ position: 'absolute', top: 200, right: 30 }} // Add inline styles for positioning
->
-  Employee Register
-</Link>
+      <nav class='navbar navbar-expand-lg'>
+        <a class='navbar-brand d-flex justify-content-between ms-5' href='#'>
+          <img src={logo} alt='' />
+        </a>
+        <button
+          class='navbar-toggler'
+          type='button'
+          data-bs-toggle='collapse'
+          data-bs-target='#navbarSupportedContent'
+          aria-controls='navbarSupportedContent'
+          aria-expanded='false'
+          aria-label='Toggle navigation'>
+          <span class='navbar-toggler-icon'></span>
+        </button>
 
+        <div class='collapse navbar-collapse justify-content-center' id='navbarSupportedContent'>
+          <ul class='navbar-nav mr-auto'>
+            <li class='nav-item active'>
+              <a class='nav-link ms-5' href='#'>
+                Home
+              </a>
+            </li>
+            <li class='nav-item active'>
+              <a class='nav-link ms-5' href='#'>
+                Progress View
+              </a>
+            </li>
+            <li class='nav-item active'>
+              <a class='nav-link ms-5' href='#'>
+                Progress Report
+              </a>
+            </li>
+            <li class='nav-item active'>
+              <a class='nav-link ms-5' href='#'>
+                Contact Us
+              </a>
+            </li>
+            <li class='nav-item active'>
+              <a class='nav-link ms-5' href='#'>
+                About
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <h2>Defect Report</h2>
 
       <table className="table table-striped" style={{ marginTop: 20 }}>
         <thead>
@@ -112,19 +139,20 @@ function TraineeReport() {
         </tbody>
       </table>
       <center>
-          <button
-            onClick={() => exportPDF()}
-            style={{
-              background: "blue",
-              padding: 10,
-              color: "white",
-              border: "none",
-              borderRadius: 20,
-            }}
-          >
-            - Export All -
-          </button>
-        </center>
+        <button
+          onClick={() => exportPDF()}
+          className="btn btn-outline-success mx-2"
+        >
+          - Export All -
+        </button>
+        <Link
+        className="btn btn-outline-primary mx-2"
+        to={`/register`}
+        style={{ position: 'column', top: 250, right: 30 }} // Add inline styles for positioning
+      >
+        Employee Register
+      </Link>
+      </center>
     </div>
   );
 }

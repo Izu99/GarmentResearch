@@ -1,8 +1,26 @@
+.navbar {
+	/* display: none; */
+}
+
+.slider {
+	/* display: none; */
+}
+
+.row:nth-child(3) {
+	display: none;
+}
+
+.Footer {
+	/* display: none; */
+}
+
 .homePage {
 	width: 100%;
 	height: 100%;
 	min-height: 100vh;
+	/* min-width: 100vw; */
 	background-color: #e2e2e92d;
+	/* box-sizing: border-box; */
 }
 
 .homePage .welcome {
@@ -53,14 +71,21 @@
 
 .homePage .row:nth-child(3) .card .image img {
 	margin-top: 0.2rem;
-	width: 10rem;
-	/* height: 6rem; */
+	width: 18rem;
+	height: 15rem;
 }
 
-.row:nth-child(3) .row {
+.row:nth-child(3) {
 	text-align: center;
-	/* align-items: center; */
+	width: 100%;
+	align-items: center;
 	justify-content: center;
+}
+
+.homePage .row:nth-child(3) .card {
+	background-color: #0000000e;
+	/* width: 90%; */
+	/* margin: 2rem 0 2rem 2rem; */
 }
 
 .homePage .row:nth-child(3) .card h2 {
@@ -78,7 +103,7 @@
 
 .homePage .Footer {
 	margin-top: 5rem;
-	width: 100%;
+	width: auto;
 }
 
 .homePage .Footer .top {
@@ -91,7 +116,7 @@
 	color: #ffffff;
 	font-size: 1.1rem;
 	padding: 0.4rem;
-	width: 275%;
+	width: 345%;
 }
 
 .homePage .Footer .top .social-links {
@@ -117,10 +142,11 @@
 .homePage .Footer .bottom {
 	display: flex;
 	justify-content: space-between;
+	width: 100%;
 }
 
 .homePage .Footer .bottom .logo {
-	margin-left: 1rem;
+	margin-left: 3rem;
 }
 
 .homePage .Footer .bottom .logo h3 {
@@ -147,41 +173,114 @@
 }
 
 @media only screen and (max-width: 991px) {
-	.navbar li {
-		width: 25%;
-		margin: auto;
+	.address {
+		display: none;
 	}
 
-	.homePage .row:nth-child(3) .card h2 {
-		font-size: 1.4rem;
+	.homePage .Footer .top .social-links {
+		margin-left: 20rem;
+	}
+
+	.homePage .row:nth-child(3) .card {
+		height: 220px;
+	}
+
+	.homePage .row:nth-child(3) .card .image img {
+		margin-top: 2rem;
+		height: 10rem;
 	}
 
 	.homePage .row:nth-child(3) .card p {
-		font-size: 1rem;
-	}
-
-	.homepage .Footer .top .social-links {
-        background-color: #000000;
+		font-size: 0.9rem;
 	}
 }
 
-@media only screen and (max-width: 540px) {
-	.navbar li {
-		width: 38%;
-		margin: auto;
-	}
-	.container-fluid button {
-		margin-top: 0.7rem;
-		width: 70%;
+@media only screen and (max-width: 800px) {
+	.homePage .Footer .top .social-links {
+		margin-top: 0.8rem;
+		margin-left: 4rem;
 	}
 
-	.container-fluid p {
+	.homePage .Footer .top .social-links i {
+		margin-top: 1rem;
+		width: 1.5rem;
+		height: 1.5rem;
+		font-size: 0.8rem;
+	}
+
+	.homePage .Footer .top {
 		width: 100%;
 	}
+
+	.navbar .navbar-toggler {
+		margin-right: 100px;
+	}
+
+	iframe {
+		width: 500px !important;
+	}
+
+	.homePage .Footer .top h2 {
+		width: 600%;
+		text-align: center;
+	}
+
+	.homePage .row:nth-child(3) .card p {
+		font-size: 0.8rem;
+	}
+
+	.homePage .row:nth-child(3) .card h2 {
+		font-size: 1.7rem;
+	}
 }
 
-@media only screen and (max-width: 450px) {
-	.container-fluid button {
-		width: 190%;
+@media only screen and (max-width: 700px) {
+	iframe {
+		width: 400px !important;
 	}
+
+	.row:nth-child(3) {
+		padding: 0;
+		margin: 0;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	iframe {
+		width: 300px !important;
+	}
+	.homePage .Footer .top .social-links {
+		margin-left: -12rem;
+	}
+	.homePage .Footer .top h2 {
+		color: #ffffff;
+		font-size: 0.9rem;
+		padding: 0.4rem 8rem 0.4rem 0rem;
+		width: 185%;
+		margin-left: 4rem;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.homePage .row:nth-child(3) .card {
+		background-color: #f9f9fa;
+		margin-top: 2rem;
+		height: auto;
+		box-shadow: 0px 0px 2px 1px#dfdcdc;
+	}
+
+    .homePage .Footer .top h2 {
+        margin-left: 2rem;
+    }
+
+    .homePage .Footer .top .social-links {
+		margin-left: -14rem;
+	}
+
+    .homePage .row:nth-child(3) .card h2 {
+        margin: 2rem 0 1.2rem 0;
+        font-size: 1.2rem;
+        color: #1c2527;
+        padding: 0 0.8rem;
+    }   
 }

@@ -32,8 +32,8 @@ class App extends Component {
 						<Route path='/register' element={<Register />} />
 						<Route path='/imageupload/:id' element={<ImageUpload />} />
 						<Route path='/ImageUploaddefect/:id' element={<ImageUploaddefect />} />
-							<Route path='/traineereport' element={<TraineeReport />} />
-							<Route path='/deluxReport' element={<DeluxReport />} />
+						<Route path='/traineereport' element={<TraineeReport />} />
+						<Route path='/deluxReport' element={<DeluxReport />} />
 						<Route exact path='' element={<HomePage />} />
 					</Routes>
 				</Router>

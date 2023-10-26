@@ -4,45 +4,45 @@
 	width: 100%;
 	height: 100%;
 	min-height: 100vh;
-	background-color: #e2d2f2;
 }
 
 .proficiency .proficiency-percentage {
-    position: absolute;
-    left: 60%;
-    bottom: 50%;
-    font-size: 3rem;
-    background-color: #BD81818a;
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	position: relative;
+	left: 65%;
+	top: 20vw;
+	font-size: 5vw;
+	background-color: #5e6be1;
+	width: 14vw;
+	height: 14vw;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #f1f1f1;
+	text-align: center;
+	box-shadow: 0px 2px 10px 6px #bbbbee;
 }
 
-.proficiency button {
-	background-color: #e2d2f2;
-}
-
-.proficiency i {
-	margin: 1rem;
-	font-size: 1.5rem;
-	text-align: left;
+.proficiency .proficiency-percentage p {
+	/* margin-top: 15rem; */
+	
 }
 
 .proficiency h2 {
 	text-align: center;
 	font-size: 2.5rem;
 	font-family: "Inter", sans-serif;
+	margin-top: -2.5rem;
+}
+
+.proficiency-labels {
+	background-color: #fafafa;
+	
 }
 
 .proficiency .top-labels {
-	position: absolute;
-	top: 40%;
-	left: 30%;
-	transform: translate(-50%, -50%);
-	font-size: 1.4rem;
+	margin-left: 20%;
+	font-size: 1.1rem;
 }
 
 .proficiency .top-labels label {
@@ -56,11 +56,10 @@
 }
 
 .proficiency .bottom-labels {
-	position: absolute;
-	top: 65%;
-	left: 32%;
-	transform: translate(-58%, -50%);
-	font-size: 1.6rem;
+	margin-left: 20%;
+	margin-top: 2rem;
+	/* transform: translate(-58%, -50%); */
+	font-size: 1.2rem;
 }
 
 .proficiency .bottom-labels label {
@@ -71,5 +70,81 @@
 
 .proficiency .bottom-labels label span.percentage {
 	position: absolute;
-	left: 20rem;
+	left: 50%;
+}
+
+.proficiency .button {
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	margin-top: 4%;
+}
+
+.proficiency .button button {
+	background-color: #5e6be1;
+	padding: 1rem 2.8rem;
+	color: #ffffff;
+	font-size: 1.2rem;
+	border-radius: 5px;
+}
+
+.back {
+	background-color: #5e6be1;
+}
+
+@media only screen and (max-width: 1000px) {
+	.proficiency .bottom-labels label span.percentage {
+		left: 60%;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.proficiency .bottom-labels label span.percentage {
+		left: 70%
+	}
+
+	.proficiency h2 {
+		font-size: 2rem;
+
+	}
+
+	.proficiency .top-labels {
+		margin-top: 1rem;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.proficiency .bottom-labels label span.percentage {
+		left: 80%;
+	}
+
+	.proficiency .proficiency-percentage {
+		left: 60%;
+		top: 91vw;
+		width: 22vw;
+		height: 22vw;
+	}
+
+	.proficiency h2 {
+		margin: 0;
+	}
+
+	.proficiency-labels {
+		margin-top: 12%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.proficiency .proficiency-percentage {
+		top: 105vw;
+	}
+
+	.proficiency .bottom-labels label{
+		font-size: 1rem;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.proficiency .proficiency-percentage {
+		top: 119vw;
+	}
 }

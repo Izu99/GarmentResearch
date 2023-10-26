@@ -1,18 +1,18 @@
-.traineeReport {
+.deluxReport {
 	width: 100%;
 	height: 100%;
 	min-height: 100vh;
 	position: fixed;
 }
 
-.traineeReport h2 {
+.deluxReport h2 {
 	color: #2839D8;
 	font-size: 3rem;
 	text-align: center;
 	margin-top: 7rem;
 }
 
-.traineeReport table {
+.deluxReport table {
 	text-align: center;
 	margin-left: 2.5rem;
 	width: 95%;
@@ -21,13 +21,13 @@
 	border-collapse: collapse;
 }
 
-.traineeReport table th {
+.deluxReport table th {
 	border: 2px solid #f1eff1;
 	padding: 1rem;
 	font-size: 1.2rem;
 }
 
-.traineeReport table tbody tr {
+.deluxReport table tbody tr {
 	border: 2px solid #f1eff1;
 	padding: 2rem;
 	padding-left: 2rem;
@@ -35,20 +35,20 @@
 	font-size: 1.1rem;
 }
 
-.traineeReport table tbody tr:nth-child(2n-1) {
+.deluxReport table tbody tr:nth-child(2n-1) {
 	background-color: #deeaf6;
 }
 
-.traineeReport table tbody tr:nth-child(2n) {
+.deluxReport table tbody tr:nth-child(2n) {
 	background-color: #ffffff;
 }
 
-.traineeReport table input[type="number"] {
+.deluxReport table input[type="number"] {
 	width: 5rem;
 	margin-left: 2rem;
 }
 
-.traineeReport table tr td button {
+.deluxReport table tr td button {
 	width: 6rem;
 	height: 1.8rem;
 	border: none;
@@ -56,29 +56,29 @@
 	margin: 2%;
 }
 
-.traineeReport table tr td button:nth-child(1) {
+.deluxReport table tr td button:nth-child(1) {
 	background-color: #0c8ce9;
 }
 
-.traineeReport table tr td button:nth-child(1):hover {
+.deluxReport table tr td button:nth-child(1):hover {
 	background-color: #0a73be;
 }
 
-.traineeReport table {
+.deluxReport table {
 	border: 2px solid #d6d6d6;
 	padding: 1rem;
 	border-radius: 15px;
 }
 
 @media only screen and (max-width: 900px) {
-	.traineeReport table th {
+	.deluxReport table th {
 		font-size: 0.9rem;
 	}
 
-	.traineeReport h2 {
+	.deluxReport h2 {
 		font-size: 2.85rem;
 	}
-	.traineeReport table td {
+	.deluxReport table td {
 		font-size: 1rem;
 	}
 }

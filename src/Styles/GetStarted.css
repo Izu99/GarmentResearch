@@ -14,7 +14,7 @@
 
 .getStarted .image img {
     margin-top: 8rem;
-    width: 25%;
+    width: 40%;
 }
 
 .getStarted .button {
@@ -29,9 +29,22 @@
 .getStarted .button button {
     background-color: #5E6BE1;
     font-size: 1.45rem;
-    width: 18rem;
+    width: 55%;
     height: 4rem;
     border: none;
     border-radius: 35px;
     color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .getStarted .image img {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .getStarted .image img {
+        width: 70%;
+    }
 }

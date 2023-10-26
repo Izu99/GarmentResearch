@@ -19,7 +19,13 @@
 	align-items: center;
 	justify-content: center;
 	color: #f1f1f1;
+	text-align: center;
 	box-shadow: 0px 2px 10px 6px #bbbbee;
+}
+
+.score .score-percentage p {
+	/* margin-top: 15rem; */
+	
 }
 
 .score h2 {
@@ -31,7 +37,6 @@
 
 .score-labels {
 	background-color: #fafafa;
-	/* margin-top: 10%; */
 	
 }
 
@@ -85,4 +90,46 @@
 
 .back {
 	background-color: #5e6be1;
+}
+
+@media only screen and (max-width: 1000px) {
+	.score .bottom-labels label span.percentage {
+		left: 60%;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.score .bottom-labels label span.percentage {
+		left: 70%
+	}
+}
+@media only screen and (max-width: 600px) {
+	.score .bottom-labels label span.percentage {
+		left: 90%;
+	}
+
+	.score .score-percentage {
+		left: 80%;
+		top: 90vw;
+		width: 18vw;
+		height: 18vw;
+	}
+
+	.score h2 {
+		margin: 0;
+	}
+
+	.score-labels {
+		margin-top: 12%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.score .score-percentage {
+		top: 110vw;
+	}
+
+	.score .bottom-labels label{
+		font-size: 1rem;
+	}
 }

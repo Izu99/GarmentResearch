@@ -7,17 +7,52 @@ import "../../Styles/Navbar.css";
 export default class CandidateRegister extends Component {
 	render() {
 		return (
-			<div className='register'>
-				<header className='navbar'>
-					<ul>
+			<div className='candidate-register'>
+				<nav class='navbar navbar-expand-lg'>
+					<a class='navbar-brand d-flex justify-content-between ms-5' href='#'>
 						<img src={logo} alt='' />
-						<li>Home</li>
-						<li>Progress View</li>
-						<li>Progress Report</li>
-						<li>Contact Us</li>
-						<li>About</li>
-					</ul>
-				</header>
+					</a>
+					<button
+						class='navbar-toggler'
+						type='button'
+						data-bs-toggle='collapse'
+						data-bs-target='#navbarSupportedContent'
+						aria-controls='navbarSupportedContent'
+						aria-expanded='false'
+						aria-label='Toggle navigation'>
+						<span class='navbar-toggler-icon'></span>
+					</button>
+
+					<div class='collapse navbar-collapse justify-content-center' id='navbarSupportedContent'>
+						<ul class='navbar-nav mr-auto'>
+							<li class='nav-item active'>
+								<a class='nav-link ms-5' href='#'>
+									Home
+								</a>
+							</li>
+							<li class='nav-item active'>
+								<a class='nav-link ms-5' href='#'>
+									Progress View
+								</a>
+							</li>
+							<li class='nav-item active'>
+								<a class='nav-link ms-5' href='#'>
+									Progress Report
+								</a>
+							</li>
+							<li class='nav-item active'>
+								<a class='nav-link ms-5' href='#'>
+									Contact Us
+								</a>
+							</li>
+							<li class='nav-item active'>
+								<a class='nav-link ms-5' href='#'>
+									About
+								</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
 
 				<div className='test'>
 					<form>

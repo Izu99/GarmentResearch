@@ -1,8 +1,14 @@
 import React, { Component } from "react";
 import logo from "../../images/logo.png";
-import detail1 from "../../images/detail1.png";
+import background from "../../images/top-image.jpg"
+
+import handmovement from "../../images/hand-movement.jpg"
+import defectdetect from "../../images/defect-detection.jpg"
+import posturedetect from "../../images/posturedetect.jpg"
+import dexteritytest from "../../images/dexteritytext.jpg"
 
 import SimpleSlider from "./slideshow";
+
 
 import "../../Styles/HomePage.css";
 import "../../Styles/Navbar.css";
@@ -58,13 +64,13 @@ export default class HomePage extends Component {
 				</nav>
 
 				<SimpleSlider />
-
+				{/* <img src={background} alt="" /> */}
 				<div className='row'>
-					<div className='card col-12 w-75'>
+					<div className='card col-12'>
 						<div className='row'>
 							<div className='image col-4'>
 								<a href='/traineereport'>
-									<img src={detail1} alt='Hand Movements' />
+									<img src={handmovement} className="img-fluid" alt='Hand Movements' />
 								</a>
 							</div>
 							<div className='col-8'>
@@ -80,11 +86,11 @@ export default class HomePage extends Component {
 						</div>
 					</div>
 
-					<div className='card col-12 w-75'>
+					<div className='card col-12'>
 						<div className='row'>
 							<div className='image col-4'>
 								<a href='/traineereport'>
-									<img src={detail1} alt='Hand Movements' />
+									<img src={defectdetect} className="img-fluid "alt='Hand Movements' />
 								</a>
 							</div>
 							<div className='col-8'>
@@ -98,11 +104,11 @@ export default class HomePage extends Component {
 							</div>
 						</div>
 					</div>
-					<div className='card col-12 w-75'>
+					<div className='card col-12'>
 						<div className='row'>
 							<div className='image col-4'>
 								<a href='/traineereport'>
-									<img src={detail1} alt='Hand Movements' />
+									<img src={posturedetect} className="img-fluid" alt='Hand Movements' />
 								</a>
 							</div>
 							<div className='col-8'>
@@ -116,11 +122,11 @@ export default class HomePage extends Component {
 							</div>
 						</div>
 					</div>
-					<div className='card col-12 w-75'>
+					<div className='card col-12'>
 						<div className='row'>
 							<div className='image col-4'>
 								<a href='/deluxReport'>
-									<img src={detail1} alt='Hand Movements' />
+									<img src={dexteritytest} className="img-fluid" alt='Hand Movements' />
 								</a>
 							</div>
 							<div className='col-8'>

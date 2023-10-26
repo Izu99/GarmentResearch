@@ -1,17 +1,98 @@
+.register {
+	width: 100%;
+	height: auto;
+	min-height: 100vh;
+	background-image: url("../images/clothingmanufacturer.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: fixed;
+  }  
 
-.register form a {
-    text-decoration: none;
-    color: #551A8B;
+.register button {
+	background-color: #e2d2f2;
 }
 
-.register form h3 .to-signin {
-    color: #6e6b6b;
+.register i { 
+	margin: 1rem;
+	font-size: 1.5rem;
 }
 
-.register form h3 .to-signin span {
-    color: #551A8B;
+.register h2 {
+	text-align: center;
+	font-size: 2.6rem;
+	margin-bottom: 0;
+}	
+
+.register form {
+    text-align: center;
+	background-color: #fffffff3;
+	width: 41%;
+	margin: 8rem auto;
+	padding: 1rem 0 3.4rem 0;
+	border-radius: 15px;
 }
 
-.MuiGrid-item {
-    margin-top: 75px !important;
+.register form label {
+	width: 100%;
+}
+
+.register form input {
+	margin-top: 1.4rem;
+	width: 60%;
+	height: 1.85rem;
+	border-radius: 25px;
+	padding: 0.1rem 1rem;
+	border: 2px solid #e9e9e9;
+	font-size: 1rem;
+}
+
+.register form input[type="date"] {
+	color: #8a8888;
+	padding: 0 1rem;
+}
+
+.register form .button {
+	margin-top: 3rem;
+}
+
+.register form .button button {
+	width: 15rem;
+	height: 2.4rem;
+	font-size: 0.9rem;
+	border: none;
+	border-radius: 25px;
+	background-color: #5e6be1;
+	color: #ffffff;
+}
+.register .to-signin {
+	margin-top: 1rem;
+}
+
+.register .to-signin a {
+	text-decoration: none;
+	
+}
+
+@media only screen and (max-width: 800px) {
+    .register form input {
+        width: 80%;
+    } 
+}
+
+@media only screen and (max-width: 600px) {
+
+    .register form {
+        width: 60%;
+    }
+
+    .register form .button button  {
+        width:78.51%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .register form {
+        width: 60%;
+    }
 }
