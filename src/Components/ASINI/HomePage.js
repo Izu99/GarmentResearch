@@ -5,7 +5,7 @@ import background from "../../images/top-image.jpg"
 import handmovement from "../../images/hand-movement.jpg"
 import defectdetect from "../../images/defect-detection.jpg"
 import posturedetect from "../../images/posturedetect.jpg"
-import dexteritytest from "../../images/dexteritytext.jpg"
+import dexteritytest from "../../images/dexteritydetect.jpg"
 
 import SimpleSlider from "./slideshow";
 
@@ -19,7 +19,7 @@ export default class HomePage extends Component {
 			<div className='homePage'>
 				<nav class='navbar navbar-expand-lg'>
 					<a class='navbar-brand d-flex justify-content-between ms-5' href='#'>
-						<img src={logo} alt='' />
+						<img src={logo} alt='' /><h2 className="fs-4 ms-2 mt-1">Sew Smart</h2>
 					</a>
 					<button
 						class='navbar-toggler'
@@ -35,17 +35,17 @@ export default class HomePage extends Component {
 					<div class='collapse navbar-collapse justify-content-center' id='navbarSupportedContent'>
 						<ul class='navbar-nav mr-auto'>
 							<li class='nav-item active'>
-								<a class='nav-link ms-5' href='#'>
+								<a class='nav-link ms-5' href='/homepage'>
 									Home
 								</a>
 							</li>
 							<li class='nav-item active'>
-								<a class='nav-link ms-5' href='#'>
+								<a class='nav-link ms-5' href='/traineereport'>
 									Progress View
 								</a>
 							</li>
 							<li class='nav-item active'>
-								<a class='nav-link ms-5' href='#'>
+								<a class='nav-link ms-5' href='/deluxreport'>
 									Progress Report
 								</a>
 							</li>
@@ -63,13 +63,16 @@ export default class HomePage extends Component {
 					</div>
 				</nav>
 
-				<SimpleSlider />
+				<div className="p-5" style={{ backgroundColor: '#2A2B3Cf2' }}>
+					<SimpleSlider />
+				</div>
+
 				{/* <img src={background} alt="" /> */}
 				<div className='row'>
 					<div className='card col-12'>
 						<div className='row'>
 							<div className='image col-4'>
-								<a href='/traineereport'>
+								<a href='https://sew-smart.netlify.app'>
 									<img src={handmovement} className="img-fluid" alt='Hand Movements' />
 								</a>
 							</div>
@@ -90,13 +93,13 @@ export default class HomePage extends Component {
 						<div className='row'>
 							<div className='image col-4'>
 								<a href='/traineereport'>
-									<img src={defectdetect} className="img-fluid "alt='Hand Movements' />
+									<img src={defectdetect} className="img-fluid " alt='Hand Movements' />
 								</a>
 							</div>
 							<div className='col-8'>
 								<h2>Detect Defects</h2>
 								<p>
-									Imagine having a tiny helper who’s sole job is href find mistakes. That’s what our
+									Imagine having a supervisor who’s sole job is href find mistakes. That’s what our
 									system does when it comes href spotting defects in garments. It diligently checks
 									each garment, ensuring that no defect, no matter how small, goes unnoticed. This
 									means every piece you get is close href perfection.
@@ -107,7 +110,7 @@ export default class HomePage extends Component {
 					<div className='card col-12'>
 						<div className='row'>
 							<div className='image col-4'>
-								<a href='/traineereport'>
+								<a href='https://posturedetection.f8783.web.app'>
 									<img src={posturedetect} className="img-fluid" alt='Hand Movements' />
 								</a>
 							</div>
@@ -132,10 +135,8 @@ export default class HomePage extends Component {
 							<div className='col-8'>
 								<h2>Dexterity Test</h2>
 								<p>
-									Dexterity is all about skillful and quick movements. Our system understands this
-									well. It watches how swiftly and skillfully tasks are being performed. This helps
-									in understanding the efficiency of the process and provides insights on areas of
-									improvement.
+									Dextirity test detection-identify the detects of the hand dextirity test defect detection-identify the defect of the sewed garments monitor posture monitoring the trainee operator sitting posture hand movements-detect imprecies hand movements of trainee sewing operators
+
 								</p>
 							</div>
 						</div>
@@ -145,9 +146,9 @@ export default class HomePage extends Component {
 					<div className='top'>
 						<div className="top-content"></div>
 						<div className="top-content">
-						<h2>Get Connected with Us on Social Networks:</h2>
+							<h2>Get Connected with Us on Social Networks:</h2>
 						</div>
-						
+
 						<div className='social-links'>
 							<i class='fa-brands fa-facebook-f'></i>
 							<i class='fa-brands fa-instagram'></i>

@@ -26,7 +26,8 @@ const handleSubmit = (event) => {
 }
   return (
     <div className="register">
-      <form onSubmit={handleSubmit}>
+      
+      <form onSubmit={handleSubmit}><h2>Register</h2>
         <input
           type="text"
           className="candidate"

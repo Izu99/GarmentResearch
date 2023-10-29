@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import img1 from "../../images/clothingmanufacturer.png"
 
 import '../../Styles/SignIn.css';
@@ -9,21 +9,25 @@ export default class SignIn extends Component {
     return (
       <div className='signin'>
         <div className="image img-fluid">
-            <img src={img1} alt="" />
+          <img src={img1} alt="" />
         </div>
-        <form action="">
-          <input type="text" className="name" placeholder='User Name'/>
-          <input type="password" className="password" placeholder='Password'/>
-          <button>
-  <Link to={"/homepage"}>Sign In</Link>
-</button>
+        <div ClassName="form">
+          <form action="">
+            <h2>Sign In</h2>
+            <input type="text" className="name" placeholder='User Name' />
+            <input type="password" className="password" placeholder='Password' />
+            <button>
+              <Link to={"/homepage"}>Sign In</Link>
+            </button>
 
 
-          <h3><a href="">Forget Password?</a></h3>
-          <h3 ><a href="/register" className="to-signup">Don't Have an Account? <span>Sign Up</span></a></h3>
-        </form>
-       
-      
+            <h3><a href="">Forget Password?</a></h3>
+            <h3 ><a href="/register" className="to-signup">Don't Have an Account? <span>Sign Up</span></a></h3>
+          </form>
+        </div>
+
+
+
       </div>
     );
   }

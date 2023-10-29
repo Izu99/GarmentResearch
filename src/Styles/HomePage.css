@@ -23,9 +23,10 @@
 	/* box-sizing: border-box; */
 }
 
-.homePage .welcome {
-	background-color: #5e6be1;
+.homePage .navbar a h2:nth-child(2) {
+	color: #dadce9;
 	display: flex;
+	font-weight: 650;
 }
 
 .homePage .welcome h2 {
@@ -44,7 +45,7 @@
 	width: 5.4rem;
 	margin: 2rem 5rem;
 	border: 2px solid #c7c7c7;
-	height: 5.4rem;
+	height: 5.2rem;
 	border-radius: 50%;
 }
 
@@ -66,9 +67,6 @@
 	box-shadow: 0px 0px 2px 1px#dfdcdc;
 }
 
-.homePage .row .card .image {
-}
-
 .homePage .row:nth-child(3) .card .image img {
 	margin-top: 0.2rem;
 	width: 18rem;
@@ -86,6 +84,7 @@
 	background-color: #0000000e;
 	/* width: 90%; */
 	/* margin: 2rem 0 2rem 2rem; */
+	box-shadow: 0px 4px 4px #cac7c7;
 }
 
 .homePage .row:nth-child(3) .card h2 {

@@ -1,6 +1,7 @@
 .navbar {
-	background-color: #383841af;
-	/* height: 6rem; */
+	background-color: #39054ecc;
+	height: 6rem;
+	width: 100%;
 	
 }
 .navbar .navbar-brand img{
@@ -9,6 +10,13 @@
 	/* font-size: 1.5rem; */
 	width: 3.2rem;
 }
+
+.navbar a h2:nth-child(2) {
+	color: #dadce9;
+	display: flex;
+	font-weight: 650;
+}
+
 
 .navbar .navbar-toggler {
 	/* margin-right: 5%; */
@@ -19,7 +27,7 @@
 	text-align: center;
 	border-bottom: 2px solid transparent;
 	color: #f9fdfd;
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 }
 
 .navbar .nav-link:before {

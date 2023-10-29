@@ -14,7 +14,7 @@ export default class GetStarted extends Component {
 			<div className='getStarted'>
 				<nav class='navbar navbar-expand-lg'>
 					<a class='navbar-brand d-flex justify-content-between ms-5' href='#'>
-						<img src={logo} alt='' />
+						<img src={logo} alt='' /><h2 className="fs-4 ms-2 mt-1">Sew Smart</h2>
 					</a>
 					<button
 						class='navbar-toggler'
@@ -30,17 +30,17 @@ export default class GetStarted extends Component {
 					<div class='collapse navbar-collapse justify-content-center' id='navbarSupportedContent'>
 						<ul class='navbar-nav mr-auto'>
 							<li class='nav-item active'>
-								<a class='nav-link ms-5' href='#'>
+								<a class='nav-link ms-5' href='/homepage'>
 									Home
 								</a>
 							</li>
 							<li class='nav-item active'>
-								<a class='nav-link ms-5' href='#'>
+								<a class='nav-link ms-5' href='/traineereport'>
 									Progress View
 								</a>
 							</li>
 							<li class='nav-item active'>
-								<a class='nav-link ms-5' href='#'>
+								<a class='nav-link ms-5' href='/deluxreport'>
 									Progress Report
 								</a>
 							</li>

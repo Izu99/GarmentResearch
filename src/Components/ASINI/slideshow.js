@@ -46,7 +46,7 @@ class SimpleSlider extends React.Component {
 
   render() {
     return (
-      <div className='container-fluid slider' id='slider'>
+      <div className='container-fluid slider mt-5' id='slider'>
         <div className='row slider-row'>
           <Slider {...this.state.settings}>
             <div className='card mb-3'>

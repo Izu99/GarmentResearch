@@ -29,13 +29,13 @@ class App extends Component {
 						<Route path='/timeup' element={<TimeUp />} />
 						<Route path='/score' element={<Score />} />
 						<Route path='/proficiency' element={<SewingProficiency />} />
-						<Route path='/signin' element={<SignIn />} />
+						<Route exact path='' element={<SignIn />} />
 						<Route path='/register' element={<Register />} />
 						<Route path='/imageupload/:id' element={<ImageUpload />} />
 						<Route path='/ImageUploaddefect/:id' element={<ImageUploaddefect />} />
 						<Route path='/traineereport' element={<TraineeReport />} />
 						<Route path='/deluxReport' element={<DeluxReport />} />
-						<Route exact path='' element={<HomePage />} />
+						<Route path='homepage' element={<HomePage />} />
 						<Route path="/imgUpload" element={<ImageUploadForm />} />
 					</Routes>
 				</Router>
